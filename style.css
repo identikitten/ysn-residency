@@ -1,0 +1,238 @@
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes quickfadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #140FFE;
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+  overflow: hidden;
+}
+
+
+/* header */
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+}
+
+header nav a{
+  transition: border 0.3s 0.2s ease-in;
+  padding-bottom: 3px;
+}
+
+header nav a:hover{
+ filter: drop-shadow(0 0 0.15rem rgb(91, 50, 241));
+ color: white;
+ transition: 0.1s ease-in;
+}
+
+a:hover{
+ filter: drop-shadow(0 0 0.15rem rgb(91, 50, 241));
+ color: white;
+ transition: 0.1s ease-in;
+}
+
+header nav a.selected{
+  border-color:  rgb(237, 240, 51);
+}
+
+.logo{
+  width: 100px;
+}
+
+.grow-4{
+    flex-grow: 4;
+}
+
+
+
+header nav a{
+  margin-left: 20px;
+  transition: border 0.3s 0.2s ease-in;
+  padding-bottom: 3px;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+.blue-section{
+  background-color: #140FFE;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+/** components **/
+
+.button{
+border: blue 1px solid;
+background: none;
+}
+
+
+/* no se si dejare este, es un experimento*/
+.x-25{
+  transform: translateX(25%);
+}
+
+.x-50{
+  transform: translateX(50%);
+}
+
+.y-25{
+  transform: translateY(25%);
+}
+
+.x-min15{
+  transform: translateX(-15%);
+}
+
+.xy-25{
+  transform: translate(25%, 25%);
+}
+.xy-fta{
+  transform: translate(5%, 0%);
+}
+
+.xy-5025{
+  transform: translate(50%, 25%);
+}
+
+.apply-now{
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  z-index: 5;
+}
+
+.apply-now img{
+  max-width: 80%;
+}
+
+.cta img:hover{
+  transform: rotate(360deg);
+  transition: 0.8s 0.1s;
+  transition-timing-function: ease-in-out;
+  filter: drop-shadow(0 0 0.15rem rgb(91, 50, 241));
+}
+
+
+
+@supports (scroll-snap-type: y mandatory) {
+  @media (min-width: 640px) {
+    html {
+      scroll-snap-type: y mandatory;
+    }
+
+    section {
+      scroll-snap-align: start;
+    }
+  }
+}
+
+
+/* overriding tachyons styling */
+
+.f-subsubheadline{
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+
+canvas{
+  width: 100%;
+  height: 100%;
+}
+
+div.canvas-holder{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.txt{
+  z-index: 2;
+}
+
+.drw{
+  z-index: 2;
+}
+
+.blue2 {
+  color: blue;
+}
+
+
+/* talleres img */
+
+
+@media (max-width: 1500px){
+.mw-sl{
+  max-width: 48rem!important;
+}
+}
+
+.casa-rosa{
+    position: relative;
+    /*top: 15%;*/
+    right: -3%;
+  }
+
+.telar{
+  position: relative;
+  left: -20%;
+}
+
+.ojo-tres{
+  position: relative;
+}
+
+
+
+
+/* media queries */
+
+
+/* large */
+@media (min-width: 60em) {
+  h1{
+    font-weight: 100;
+    font-size: 4rem;
+  }
+  }
+
+
+/* medium */
+@media (min-width: 30em) and (max-width: 60em) {
+
+}
+
+
+/* small */
+@media (max-width: 35em) {
+.x-50-s{
+  transform: translateX(50%);
+  transition: 0.3s 0.2s ease-in;
+}
+}

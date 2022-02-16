@@ -1,4 +1,4 @@
-const tags = document.querySelectorAll(".cls-n, .cls-tableau, .st1, .apply-now, img, .cls-pain ")
+const tags = document.querySelectorAll(".cls-n2, .cls-tableau, .st1, .apply-now, img, .cls-pain ")
 
 // fade out on load
 tags.forEach(tag => {
@@ -15,7 +15,7 @@ const fadeIn = function () {
 
     if (tagTop < window.innerHeight && tagBottom > 0) {
       tag.style.animation = `fadein 1s ${delay}s both`
-      delay = delay + 0.25
+      delay = delay + 0.05
     } else {
       tag.style.opacity = 0
       tag.style.animation = ""
@@ -34,7 +34,7 @@ fastags.forEach(fastag => {
 })
 
 const quickFadeIn = function () {
-  let delay = 1
+  let delay = 0.5
 
 	fastags.forEach(fastag => {
     const fastagTop = fastag.getBoundingClientRect().top
@@ -42,7 +42,7 @@ const quickFadeIn = function () {
 
     if (fastagTop < window.innerHeight && fastagBottom > 0) {
       fastag.style.animation = `quickfadein 0.5s ${delay}s both`
-    delay = 1
+    delay = 0.5
     } else {
       fastag.style.opacity = 0
       fastag.style.animation = ""

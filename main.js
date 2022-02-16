@@ -8,14 +8,14 @@
     })
     anime({
         targets: '#ilo-box .cls-n ',
-        delay: 1000,
+        delay: 2000,
         duration: 1000,
 
         translateY: [
         { value: [40, 0], duration: 500, delay: 1000, from: 'center' },
     ],
     opacity: [
-         { value: [0, 1], duration: 800, easing: 'easeOutBack' }
+         { value: [0, 1], duration: 800, delay: 1000, easing: 'easeOutBack' }
     ],
 
     })

@@ -44,13 +44,11 @@ header nav a{
 header nav a:hover{
  filter: drop-shadow(0 0 0.15rem rgb(91, 50, 241));
  color: white;
- transition: 0.1s ease-in;
 }
 
 a:hover{
  filter: drop-shadow(0 0 0.15rem rgb(91, 50, 241));
  color: white;
- transition: 0.1s ease-in;
 }
 
 header nav a.selected{
@@ -69,7 +67,6 @@ header nav a.selected{
 
 header nav a{
   margin-left: 20px;
-  transition: border 0.3s 0.2s ease-in;
   padding-bottom: 3px;
   flex-grow: 1;
   text-transform: uppercase;
@@ -139,8 +136,7 @@ background: none;
 
 .cta img:hover{
   transform: rotate(360deg);
-  transition: 0.8s 0.1s;
-  transition-timing-function: ease-in-out;
+  transition: transform 0.8s 0.1s ease-in-out;
   filter: drop-shadow(0 0 0.15rem rgb(91, 50, 241));
 }
 
@@ -238,7 +234,7 @@ div.canvas-holder{
 @media (min-width: 30em) and (max-width: 60em) {
 
   .y-4em{
-    transform: translateY(11.2em);
+    transform: translateY(10.8em);
   }
 }
 
@@ -247,7 +243,7 @@ div.canvas-holder{
 @media (max-width: 35em) {
 .x-50-s{
   transform: translateX(50%);
-  transition: 0.3s 0.2s ease-in;
+  transition: transform 0.3s 0.2s ease-in;
 }
 
 .wrap-s{
@@ -256,6 +252,18 @@ div.canvas-holder{
 
 
 .y-4em{
-  transform: translateY(11.2em);
+  transform: translateY(10.8em);
 }
+
+.logo-nav{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header nav a{
+  margin-left: 10px;
+}
+
+
 }

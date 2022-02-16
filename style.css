@@ -75,10 +75,15 @@ header nav a{
   text-transform: uppercase;
 }
 
-.blue-section{
-  background-color: #140FFE;
-  padding-top: 8rem;
-  padding-bottom: 10rem;
+
+.grid-res{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lang{
+  z-index: 5;
 }
 
 /** components **/
@@ -89,13 +94,17 @@ background: none;
 }
 
 
-/* no se si dejare este, es un experimento*/
+/* transforms */
 .x-25{
   transform: translateX(25%);
 }
 
 .x-50{
   transform: translateX(50%);
+}
+
+.y-4em{
+  transform: translateY(4.2em);
 }
 
 .y-25{
@@ -184,6 +193,8 @@ div.canvas-holder{
 }
 
 
+
+
 /* talleres img */
 
 
@@ -226,6 +237,9 @@ div.canvas-holder{
 /* medium */
 @media (min-width: 30em) and (max-width: 60em) {
 
+  .y-4em{
+    transform: translateY(11.2em);
+  }
 }
 
 
@@ -234,5 +248,14 @@ div.canvas-holder{
 .x-50-s{
   transform: translateX(50%);
   transition: 0.3s 0.2s ease-in;
+}
+
+.wrap-s{
+  flex-wrap: wrap;
+}
+
+
+.y-4em{
+  transform: translateY(11.2em);
 }
 }
